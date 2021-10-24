@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="211mm" height="211mm" version="1.1" viewBox="0 0 211 211" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <title>Sprinkles</title>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Sprinkles</dc:title>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Evie Snuggle</dc:title>
+     </cc:Agent>
+    </dc:creator>
+    <dc:date>2020-12-11</dc:date>
+    <dc:source>https://snugg.i</dc:source>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-3.63 -36.7)">
+  <g stroke-linecap="round" stroke-width="35">
+   <path d="m31.1 75.1 35.6 66.6 0.294 0.774" fill="#085c00" stroke="#085c00" stroke-opacity=".988"/>
+   <path d="m187 59.2-49.1 57.4-0.614 0.556" fill="#210d00" stroke="#c9630a"/>
+   <path d="m152 189-66.6 35.7-0.774 0.295" fill="#210d00" stroke="#210d00"/>
+  </g>
+  <g transform="matrix(1.9 -.499 .501 1.91 -6.83 161)">
+   <path d="m36 11c0-1.1-0.896-2-2-2s-2 0.896-2 2c0 0-0.011 3.28-3 3.89v-2.89c0-6.08-4.92-11-11-11s-11 4.92-11 11v3.24c-5.22 1.57-7 7.99-7 11.8 0 1.1 0.896 2 2 2s2-0.896 2-2c0 0 2e-3 -3.54 3.34-3.96 0.502 4.84 1.62 9.96 3.66 9.96h1c4 0 3 2 7 2s3-2 6-2 2.4 2 6 2c1.66 0 3-1.34 3-3 0-0.675-2.27-4.99-3.76-9.27 5.74-1.38 5.76-8.15 5.76-11.7z" fill="#e1e8ed"/>
+   <circle cx="13" cy="12" r="2" fill="#292f33"/>
+   <circle cx="23" cy="12" r="4" fill="#292f33"/>
+   <circle cx="23" cy="13" r="2" fill="#9aaab4"/>
+   <path d="m22.2 19.5c2.65 1.99 3.59 5.21 2.1 7.2s-4.85 1.99-7.5 0c-2.65-1.99-3.59-5.21-2.1-7.2 1.49-1.99 4.85-1.99 7.5 0z" fill="#292f33"/>
+  </g>
+ </g>
+</svg>
