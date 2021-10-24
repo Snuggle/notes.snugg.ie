@@ -105,10 +105,10 @@ I am familiar with Fedora, as I use both Fedora and MacOS on my personal devices
 
 ## What things are you running?
 ### Logical Topology Diagram
-![[logical_topology.svg]]
+![logical_topology.svg](logical_topology.svg)
 
 ### Physical Topology Diagram
-![[physical_topology.svg]]
+![physical_topology.svg](physical_topology.svg)
 
 And... that's pretty much everything for now. More might be coming soon! (Including plans to create a DIY server cabinet)
 

@@ -20,7 +20,7 @@ date: 2021-05-09 17:49:00
 
 ## The Idea
 
-Now after [[Hug Server]] for self-hosting things, there's no-where to put it! Most server cabinets that people can buy online are either _way too expensive_ or way too big 'n' heavy to ship properly. So, how could I make a cabinet of my own yet still make it functional?
+Now after [Hug Server](Hug%20Server.md) for self-hosting things, there's no-where to put it! Most server cabinets that people can buy online are either _way too expensive_ or way too big 'n' heavy to ship properly. So, how could I make a cabinet of my own yet still make it functional?
 
 I wanted to avoid the ever-popular [LackRack](https://wiki.eth0.nl/index.php/LackRack) where people buy [an Ikea table](https://www.ikea.com/us/en/p/lack-side-table-black-20011408/) to use as their server rack, which even comes with a [handy instruction manual](http://eth-0.nl/lackrack.pdf), as it doesn't actually have any proper mounting holes. I didn't like the thought of screwing all this expensive equipment directly into into the particle wood and also not being able to use the sliding rails that come with many server chassis. I was also planning to add a heavy [UPS](https://en.wikipedia.org/wiki/Uninterruptible_power_supply) at some point, which also ruled out this option.
 
@@ -68,7 +68,7 @@ Most of this project was just finding things that were lying around and using th
 
 ![A picture showing the frame being completed with the server mounted inside using rails](assets/images/posts/server-cabinet/frame-completed.jpg)
 
-(Note how we're using [[Hug Server]] as a guideline for the exact width needed! Easier and more accurate than measuring by center-widths.)
+(Note how we're using [Hug Server](Hug%20Server.md) as a guideline for the exact width needed! Easier and more accurate than measuring by center-widths.)
 
 Next we can start measuring things up. I would need two different types of plank. One long length for planking up the sides and another shorter one for planking up the front/rear doors. From this point, it was all sanding, adding screws, hinges and a lot of re-measuring to make sure things went right.
 
