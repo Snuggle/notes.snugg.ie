@@ -1,14 +1,20 @@
 #!/usr/bin/env bash
 
+<<<<<<< HEAD
 temporary_directory="/tmp/snugg-ie_temporary_git_clone"
 
+=======
+>>>>>>> 4cd27fc0508a583e1e936d0b5559c635d3b5866c
 echo "🗑  Removing old blog posts."
 #rm -r _posts
 rm -r "Blog Posts"
 rm -r assets
 echo "🔀 Setting up Git directory & sparse checkout."
+<<<<<<< HEAD
 original_directory="$(pwd)"
 mkdir "$temporary_directory"; cd "$temporary_directory"
+=======
+>>>>>>> 4cd27fc0508a583e1e936d0b5559c635d3b5866c
 git init
 git remote add origin https://github.com/snuggle/snugg.ie
 git config core.sparseCheckout true
@@ -19,6 +25,7 @@ echo "✅ Finished pulling blog posts from Git."
 echo "🗑  Removing Git directory, it's not needed anymore."
 rm -rf .git
 
+<<<<<<< HEAD
 echo "🚚 Moving things back into their proper places..."
 mv _posts "$original_directory/Blog Posts"
 mv assets "$original_directory/assets"
@@ -26,6 +33,11 @@ cd "$original_directory"
 
 printf "🗑️  "
 rm -rv "$temporary_directory"
+=======
+echo "ℹ️  Moving directories to their proper places."
+printf "🚚 Moved directory: "
+mv -v _posts "Blog Posts"
+>>>>>>> 4cd27fc0508a583e1e936d0b5559c635d3b5866c
 
 echo "ℹ️  Making automated edits to blog posts."
 cd "Blog Posts"
@@ -36,7 +48,11 @@ do
 	# Remove all Jekyll 'Liquid' tags
 	sed -i -e 's/{.*}//g' "$post"
 	# Rename any references to '/assets/' to a relative 'assets/'
+<<<<<<< HEAD
 	sed -i -e 's/\/assets\//..\/assets\//g' "$post"
+=======
+	sed -i -e 's/\/assets\//assets\//g' "$post"
+>>>>>>> 4cd27fc0508a583e1e936d0b5559c635d3b5866c
 
 	# Fix links to other blog posts #todo: Needs improvement, currently hardcoded.
 	sed -i -e 's/(\/posts\/hug-server)/[[Hug Server]]/g' "$post"
@@ -58,9 +74,17 @@ do
 	
 	if [ "$(uname)" == "Darwin" ]; then
 	    # Do something under Mac OS X platform       
+<<<<<<< HEAD
 	    rename -v -e 's/^\d{4}-\d{2}-\d{2}-//' -e 's/-/ /g' -e 's/(^|[\s_-])([a-z])/$1\u$2/g' "$post" 
 	elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 		# Do something under GNU/Linux platform
+=======
+	    echo "macOS"
+	    rename -v -e 's/^\d{4}-\d{2}-\d{2}-//' -e 's/-/ /g' -e 's/(^|[\s_-])([a-z])/$1\u$2/g' "$post" 
+	elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+		# Do something under GNU/Linux platform
+		echo "Linux"
+>>>>>>> 4cd27fc0508a583e1e936d0b5559c635d3b5866c
 		rename -v -E 's/^\d{4}-\d{2}-\d{2}-//; s/-/ /g; s/(^|[\s_-])([a-z])/$1\u$2/g' "$post"
 		
 	fi
