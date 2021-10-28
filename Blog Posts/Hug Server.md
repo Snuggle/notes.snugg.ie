@@ -6,11 +6,7 @@ subtitle: "Let's look into Hug, the server running all the things..."
 image: hug-server.png
 date: 2020-12-23 21:53:00
 redirect_from: /hug-server
-<<<<<<< HEAD
 images: ../assets/images/posts/hug-server
-=======
-images: assets/images/posts/hug-server
->>>>>>> 4cd27fc0508a583e1e936d0b5559c635d3b5866c
 ---
 <!-- Content -->
 <div class="image main">
@@ -43,29 +39,17 @@ Enter... Hug Server.
 ## And so it begins...
 ### Let's find a chassis and motherboard!
 
-<<<<<<< HEAD
 ![Inside of server purchased](../assets/images/posts/hug-server/original.jpeg)
-=======
-![Inside of server purchased](assets/images/posts/hug-server/original.jpeg)
->>>>>>> 4cd27fc0508a583e1e936d0b5559c635d3b5866c
 I ended up wandering upon an eBay listing for a Sandy Bridge server which was only £70.
 
 This was awesome! It included an 8-thread [Intel Xeon E3-1240](https://ark.intel.com/content/www/us/en/ark/products/52273/intel-xeon-processor-e3-1240-8m-cache-3-30-ghz.html) CPU plus an [Intel S1200BTL](https://ark.intel.com/content/www/us/en/ark/products/53557/intel-server-board-s1200btl.html) motherboard. The most important part for me, though, was the [Ri-Vier RVS2-06A](https://www.ri-vier.eu/rivier-2u-12bay-chassis-with-sas-backplane-rvs206a-p-323.html) chassis with **included rails** and a 12-bay hotswappable SAS/SATA backplane. This was perfect for building a custom server within, as there were no OEM or proprietary parts — I could fit any components I'd like because there weren't any weird form factors to think about. It even used a standard PSU.
 
-<<<<<<< HEAD
 ![Motherboard purchased, ASUS Z10PE-D8 WS](../assets/images/posts/hug-server/motherboard.jpeg)
-=======
-![Motherboard purchased, ASUS Z10PE-D8 WS](assets/images/posts/hug-server/motherboard.jpeg)
->>>>>>> 4cd27fc0508a583e1e936d0b5559c635d3b5866c
 
 The next part came along when I saw a motherboard that should've been worth about £500 at the time, which I bought for only £87. The ASUS Z10PE-D8 WS: a Haswell semi-workstation/server board with seven x16 PCIe lanes. It was so affordable 
 because it *'had a bent CPU2 socket pin'* and the seller wasn't sure if the second socket would still work, as they only had one CPU to test with. I tested it myself, there were no issues!
 
-<<<<<<< HEAD
 ![Screenshot of eBay listing for motherboard](../assets/images/posts/hug-server/ebay.png)
-=======
-![Screenshot of eBay listing for motherboard](assets/images/posts/hug-server/ebay.png)
->>>>>>> 4cd27fc0508a583e1e936d0b5559c635d3b5866c
 
 
 
@@ -74,11 +58,7 @@ because it *'had a bent CPU2 socket pin'* and the seller wasn't sure if the seco
 
 ### Now to make it smart, to hunt some CPU and memory!
 
-<<<<<<< HEAD
 ![A picture of one of the CPUs used, Intel Xeon E5-2630 v3.](../assets/images/posts/hug-server/cpu.png)
-=======
-![A picture of one of the CPUs used, Intel Xeon E5-2630 v3.](assets/images/posts/hug-server/cpu.png)
->>>>>>> 4cd27fc0508a583e1e936d0b5559c635d3b5866c
 
 
 As very few people actually have Haswell server motherboards, the CPUs sell for relatively cheap! I managed to purchase two Intel Xeon E5-2630 v3's for £30/ea, giving me a total of 32 threads at 2.4–3.2 GHz for £60.
@@ -93,13 +73,8 @@ I also didn't have too much issue finding memory. I found three 16 GB sticks of 
 
 
  
-<<<<<<< HEAD
 ![Motherboard full assembled](../assets/images/posts/hug-server/motherboard_built.jpg)
 ![Installing motherboard into 2U chassis, next to PSU](../assets/images/posts/hug-server/server_inside.png)
-=======
-![Motherboard full assembled](assets/images/posts/hug-server/motherboard_built.jpg)
-![Installing motherboard into 2U chassis, next to PSU](assets/images/posts/hug-server/server_inside.png)
->>>>>>> 4cd27fc0508a583e1e936d0b5559c635d3b5866c
 
 
 
@@ -109,13 +84,8 @@ The motherboard was an extremely tight fit, as it is designed to the EEB specifi
 
 
  
-<<<<<<< HEAD
 ![Both heatsinks being shown with the fans running](../assets/images/posts/hug-server/heatsinky.jpg)
 ![Overall photo of the final build, chassis closed](../assets/images/posts/hug-server/final.png)
-=======
-![Both heatsinks being shown with the fans running](assets/images/posts/hug-server/heatsinky.jpg)
-![Overall photo of the final build, chassis closed](assets/images/posts/hug-server/final.png)
->>>>>>> 4cd27fc0508a583e1e936d0b5559c635d3b5866c
 
 
 
@@ -125,17 +95,12 @@ The motherboard was an extremely tight fit, as it is designed to the EEB specifi
 
 ### Loading up new software
 
-<<<<<<< HEAD
 ![Quick screenshot from neofetch, showing the operating system running (Red Hat Enterprise Linux) and system specs](../assets/images/posts/hug-server/neofetch.png)
-=======
-![Quick screenshot from neofetch, showing the operating system running (Red Hat Enterprise Linux) and system specs](assets/images/posts/hug-server/neofetch.png)
->>>>>>> 4cd27fc0508a583e1e936d0b5559c635d3b5866c
 
 For this server, I would like to be able to virtualise and/or containerize many different services. I had a few choices here! I could use something popular like Proxmox or VMWare's ESXi, but this would be entirely for personal use and I would also like my web dashboards to look aesthetically pleasing.
 
 I am familiar with Fedora, as I use both Fedora and MacOS on my personal devices, and there is a web dashboard known as Cockpit which is included by default with Fedora server, but I would prefer a more stable release cycle for updates. This is why I'd chose Red Hat Enterprise Linux for my host OS and then I could use Cockpit's QEMU/KVM module plus some command-line to manage all of my virtual machines! (Plus Cockpit's Podman for Docker containers)
 
-<<<<<<< HEAD
 ![Screenshot from the included server management web dashboard, Cockpit](../assets/images/posts/hug-server/cockpit.png)
 
 ## What things are you running?
@@ -146,16 +111,6 @@ I am familiar with Fedora, as I use both Fedora and MacOS on my personal devices
 ### Physical Topology Diagram
 
 <embed class="centre" src="/physical_topology.svg">
-=======
-![Screenshot from the included server management web dashboard, Cockpit](assets/images/posts/hug-server/cockpit.png)
-
-## What things are you running?
-### Logical Topology Diagram
-![logical_topology.svg](logical_topology.svg)
-
-### Physical Topology Diagram
-![physical_topology.svg](physical_topology.svg)
->>>>>>> 4cd27fc0508a583e1e936d0b5559c635d3b5866c
 
 And... that's pretty much everything for now. More might be coming soon! (Including plans to create a DIY server cabinet)
 
