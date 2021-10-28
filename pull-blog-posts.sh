@@ -8,7 +8,8 @@ rm -r "Blog Posts"
 rm -r assets
 echo "🔀 Setting up Git directory & sparse checkout."
 original_directory="$(pwd)"
-mkdir "$temporary_directory"; cd "$temporary_directory"
+mkdir "$temporary_directory"
+cd "$temporary_directory"
 git init
 git remote add origin https://github.com/snuggle/snugg.ie
 git config core.sparseCheckout true
